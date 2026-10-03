@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f5f7ff) !important;
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #222;
+}
+
+/* Main Form */
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Header Box */
+.box {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.box h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.box p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border: none !important;
+    border-collapse: collapse;
+    background: white;
+}
+
+/* Table Cells */
+td {
+    padding: 10px 12px;
+    border: none;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Text Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="phone"],
+input[type="password"],
+input[type="date"],
+input[type="date of birth"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    background: #f9fafb;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Textarea */
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    accent-color: #2563eb;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Register Button */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 13px 45px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+}
+
+/* Login Text */
+form p {
+    text-align: center;
+    margin: 15px 0;
+    color: #555;
+}
+
+/* Footer */
+h3 {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 8px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .box {
+        padding: 22px 12px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .box h2 {
+        font-size: 23px;
+    }
+
+    td {
+        padding: 8px 6px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        width: 90%;
+    }
+}

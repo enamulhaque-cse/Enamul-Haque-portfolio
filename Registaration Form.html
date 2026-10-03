@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registaration form</title>
+    <link rel="stylesheet" href="Registaration Form.css"/>
+</head>
+<body style="background-color: aliceblue;">
+    <table border="black">
+  <form action="/servers" >
+    <div class="box">
+    <h2>👤 User Registration</h2>
+    <p>Create your account and get started</p><br/><br>
+    </div>
+    <br/>
+    <form>
+    <label for="Full name"><b>Full Name:</b></label>
+    <input type="text" id="Full Name" placeholder="Enter your Full name"/> <br/><br/>
+    <label for="Email Address"><b>Email Address:</b></label>
+    <input type="text" id=" Email Address" placeholder="Enter your email addree"/><br/><br/>
+    <label for="Phone Number"><b>Phone Number:</b></label>
+    <input type="phone Number" id="phone number" placeholder="Enter your phone number"><br/><br/>
+    <label for="Date of Birth"><b>Date of Birth:</b></label>
+    <input type="date of birth" id="date of birth" placeholder="dd-mm-yyyy"><br/><br/>
+    <label for="Gender"><b>Gender:<b></b></label>
+    <input type="radio" name="Male" id="male" value="male"/>
+    <label for="male"><b>Male</b></label>
+    <input type="radio" name="female" id="female" value="female"/>
+    <label for="female"> <b>Female </b></label>
+    <input type="radio" name="other" id="other" value="other"/>
+    <label for="other"><b>Other</b></label><br/><br/>
+    <label for="Course/Branch"><b>course/Brance:</b></label>
+    <select name="Course/Branch" id="Course/Branch">
+        <option>select your course</option>
+        <option>CSE</option>
+        <option>EEE</option>
+        <option>AL/ML</option>
+        <option>ME</option>
+    </select>
+    <br/><br/>
+    <label for="Passsword"><b>Password:</b></label>
+    <input type="text" id="password" placeholder="Enter your password"/>
+    <br/><br/>
+    <label for="Address"><b>Address:</b></label><br/>
+    <textarea name="massage" id="message" rows="4" cols="30" placeholder="Enter your address"></textarea>
+    <br/><br/>
+    <label for="Hobbies"><b>Hobbies</b> (seiect your interests)</label><br/>
+    <input type="checkbox" name="Reading" id="Reading" value="Reading">
+    <label for="Reading">Reading</label><br/>
+    <input type="checkbox" name="Music" id="music" value="Music">
+    <label for="Music">Music</label><br/>
+    <input type="checkbox" name="sports" id="Sports" value="Sports">
+    <label for="Sports">Sports</label><br/>
+    <input type="checkbox" name="Coding" id="Coding" value="Coding">
+    <label for="Coding">Coding</label>
+    <br/></br>
+    <label for="Profile Photo"><b>Profile Photo</label></b></label><br/>
+    <input type="file" id="photo"/>
+    <br/><br/>
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the <a href="Terms and conditions">Terms and conditions</a></label>
+    <br/><br>
+    <button>Register</button>
+   </form>
+   <p>already have an account?<a href="Login">Login</a>
+   </p>
+   </table>
+   <h3>made with &hearts; by Enamul Haque<h3>
+
+</body>
+</html>
