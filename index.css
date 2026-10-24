@@ -682,11 +682,26 @@ footer p {
 
         padding: 18px;
     }
+   
+    S.projects-image {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
-    .projects-image {
-        height: 150px;
+.projects-image h3 {
+    margin: 0;
+}
+```
+
+       
+       
     }
-
+   
 
     /* ---------- CONTACT ---------- */
 
