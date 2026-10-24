@@ -2,7 +2,160 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equi<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1425">
+  <title>Enamul Haque | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+  <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation">
+  <label for="menu-toggle" class="menu-open" aria-label="Open menu"><i class="fa-solid fa-bars"></i></label>
+  <label for="menu-toggle" class="sidebar-shade" aria-label="Close menu"></label>
+
+  <aside class="sidebar">
+    <div class="brand-row">
+      <a class="brand" href="#home">Enamul Haque</a>
+      <label for="menu-toggle" class="menu-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></label>
+    </div>
+    <nav class="side-nav">
+      <a class="active" href="#home"><i class="fa-solid fa-house"></i><span>Gallery</span></a>
+      <a href="#shortcuts"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>Shortcuts</span></a>
+      <a href="#exhibits"><i class="fa-solid fa-images"></i><span>Exhibits</span></a>
+      <a href="#events"><i class="fa-solid fa-calendar-days"></i><span>Events</span></a>
+      <a href="#store"><i class="fa-solid fa-store"></i><span>Store</span></a>
+      <a href="#contact"><i class="fa-solid fa-phone"></i><span>Contact</span></a>
+      <a href="#feedback"><i class="fa-regular fa-comments"></i><span>Feedback</span></a>
+    </nav>
+    <div class="side-social">
+      <a href="https://www.facebook.com/share/19hUp2qFnt/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/itz_laden_shaikh_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@enamulhaque5388" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://github.com/enamulhaque-cse" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">WELCOME TO MY GALLERY</p>
+        <h1>Capturing <span>Moments,</span><br>Creating Memories.</h1>
+        <p class="hero-description">Hi, I'm Enamul Haque. I enjoy photography, travelling, technology, and capturing the beauty of everyday life. This gallery is a collection of my favourite moments and experiences.</p>
+        <a class="primary-button" href="#gallery">Explore Gallery <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="top-grid" id="about">
+      <article class="panel about-panel">
+        <img class="profile-photo" src="photo.jpg" alt="Enamul Haque">
+        <div class="about-copy">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>About Me</h2>
+          <p>I'm Enamul Haque, a Mechanical Engineering student who enjoys learning new technologies, exploring places, and capturing memorable moments. This is my personal space for photos, memories, and creative work.</p>
+          <div class="interests">
+            <span><i class="fa-solid fa-graduation-cap"></i> Mechanical Engineering</span>
+            <span><i class="fa-solid fa-camera"></i> Photography</span>
+            <span><i class="fa-solid fa-location-dot"></i> Hyderabad, Telangana</span>
+            <span><i class="fa-solid fa-compass"></i> Travel & Creativity</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel shortcuts-panel" id="shortcuts">
+        <p class="eyebrow">FIND ME ONLINE</p>
+        <h2>Shortcuts</h2>
+        <div class="shortcut-grid">
+          <a href="index.html"><i class="fa-solid fa-laptop"></i><span>My Portfolio</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+          <a href="https://github.com/enamulhaque-cse" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span>GitHub</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+          <a href="https://www.instagram.com/itz_laden_shaikh_/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram instagram"></i><span>Instagram</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+          <a href="https://www.youtube.com/@enamulhaque5388" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube youtube"></i><span>YouTube</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+          <a href="https://www.facebook.com/share/19hUp2qFnt/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook facebook"></i><span>Facebook</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+          <a href="#contact"><i class="fa-regular fa-envelope"></i><span>Contact Me</span><i class="fa-solid fa-arrow-right arrow"></i></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel gallery-panel" id="gallery">
+      <div class="section-heading">
+        <div><p class="eyebrow">MOMENTS IN FRAMES</p><h2>My Gallery</h2></div>
+        <span class="section-note">A few favourite moments</span>
+      </div>
+      <div class="photo-grid">
+        <a class="photo-card" href="photo.jpg" target="_blank"><img src="photo.jpg" alt="Enamul Haque portrait"><span>My Portrait</span></a>
+        <a class="photo-card" href="MY%20PIC.JPEH.jpeg" target="_blank"><img src="MY PIC.JPEH.jpeg" alt="Personal memory" onerror="this.src='photo.jpg'"><span>Personal Memories</span></a>
+        <a class="photo-card" href="photo.jpg" target="_blank"><img src="photo.jpg" alt="Favourite moments"><span>Favourite Moments</span></a>
+        <a class="photo-card photo-placeholder" href="#exhibits"><i class="fa-solid fa-camera-retro"></i><span>Add Your Next Photo</span></a>
+      </div>
+      <p class="small-note">Tip: Add more image files to your GitHub repository and duplicate a photo-card line to show them here.</p>
+    </section>
+
+    <section class="bottom-grid">
+      <article class="panel mini-panel" id="exhibits">
+        <div class="mini-heading"><h2>Exhibits</h2><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <img src="photo.jpg" alt="Featured photography">
+        <h3>Featured Moments</h3>
+        <p>A small collection of personal photographs and creative memories.</p>
+      </article>
+      <article class="panel mini-panel" id="events">
+        <div class="mini-heading"><h2>Events</h2><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="event-illustration"><i class="fa-solid fa-camera"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-music"></i></div>
+        <h3>Memorable Days</h3>
+        <p>College functions, trips, celebrations, and moments worth remembering.</p>
+      </article>
+      <article class="panel mini-panel store-panel" id="store">
+        <div class="mini-heading"><h2>Store</h2><span class="coming-soon">Coming Soon</span></div>
+        <i class="fa-solid fa-bag-shopping store-icon"></i>
+        <h3>Creative Collection</h3>
+        <p>Photography prints and creative projects may appear here in the future.</p>
+      </article>
+      <article class="panel mini-panel feedback-panel" id="feedback">
+        <div class="mini-heading"><h2>Feedback</h2><i class="fa-regular fa-comments"></i></div>
+        <form id="feedback-form">
+          <label class="sr-only" for="visitor-name">Your name</label>
+          <input id="visitor-name" name="name" type="text" placeholder="Your name" required>
+          <label class="sr-only" for="visitor-feedback">Your feedback</label>
+          <textarea id="visitor-feedback" name="feedback" rows="3" placeholder="Your feedback" required></textarea>
+          <button type="submit">Prepare Feedback <i class="fa-solid fa-paper-plane"></i></button>
+          <p id="feedback-status" class="form-note">This opens your email app; it does not store feedback on the website.</p>
+        </form>
+      </article>
+    </section>
+
+    <section class="panel contact-panel" id="contact">
+      <div><p class="eyebrow">LET'S CONNECT</p><h2>Contact & Socials</h2><p>Thanks for visiting my gallery. Find me on my social platforms or return to my main portfolio.</p></div>
+      <div class="contact-actions">
+        <a href="https://www.instagram.com/itz_laden_shaikh_/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/share/19hUp2qFnt/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        <a href="https://www.youtube.com/@enamulhaque5388" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a>
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Main Portfolio</a>
+      </div>
+    </section>
+
+    <footer><span>© 2026 Enamul Haque</span><a href="#home">Back to top ↑</a></footer>
+  </main>
+
+  <script>
+    const form = document.getElementById('feedback-form');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('visitor-name').value.trim();
+      const feedback = document.getElementById('visitor-feedback').value.trim();
+      const subject = encodeURIComponent('Gallery website feedback from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\\n\\nFeedback:\\n' + feedback);
+      document.getElementById('feedback-status').textContent = 'Opening your email app to send feedback…';
+      window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>
+v="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Project</title>
     <link rel="stylesheet" href="Gallery.css"/>
