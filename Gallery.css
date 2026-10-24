@@ -1,0 +1,335 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: white;
+}
+
+/* Background Image */
+.main_box {
+    min-height: 100vh;
+    width: 100%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("photo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Hide Checkbox */
+#check {
+    display: none;
+}
+
+/* Open Menu Button */
+.btn_one {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+}
+
+.btn_one i {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_one i:hover {
+    color: #00e5ff;
+    transform: scale(1.1);
+}
+
+/* Sidebar Menu */
+.sidebar_menu {
+    position: fixed;
+    top: 0;
+    left: -320px;
+
+    width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
+
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.4);
+
+    transition: left 0.4s ease;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo a {
+    color: #00e5ff;
+    font-size: 23px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Close Button */
+.btn_two {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+
+.btn_two i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_two i:hover {
+    color: #ff4d6d;
+    transform: rotate(90deg);
+}
+
+/* Menu Items */
+.menu {
+    padding: 25px 15px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 15px;
+    margin-bottom: 8px;
+
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.menu li i {
+    width: 22px;
+    text-align: center;
+
+    color: #00e5ff;
+    font-size: 18px;
+}
+
+.menu li a {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    flex: 1;
+}
+
+.menu li:hover {
+    background: rgba(0, 229, 255, 0.12);
+    transform: translateX(5px);
+}
+
+.menu li:hover a,
+.menu li:hover i {
+    color: #00e5ff;
+}
+
+/* Social Media Icons */
+.social_media {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social_media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    list-style: none;
+}
+
+.social_media a {
+    color: #e2e8f0;
+    font-size: 22px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.social_media a:hover {
+    color: #00e5ff;
+    transform: translateY(-4px);
+}
+
+/* Open Sidebar */
+#check:checked ~ .sidebar_menu {
+    left: 0;
+}
+
+/* Hide Open Button When Sidebar Is Open */
+#check:checked ~ .btn_one {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .sidebar_menu {
+        width: 85%;
+        max-width: 300px;
+    }
+
+    .logo a {
+        font-size: 21px;
+    }
+
+    .menu li {
+        padding: 13px;
+    }
+
+    .main_box {
+        background-attachment: scroll;
+        background-position: center;
+    }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}/* Mobile Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+    }
+
+    .main_box {
+        width: 100%;
+        min-height: 100vh;
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    /* Menu Button */
+    .btn_one {
+        top: 15px;
+        left: 15px;
+    }
+
+    .btn_one i {
+        font-size: 27px;
+    }
+
+    /* Sidebar */
+    .sidebar_menu {
+        width: 85%;
+        max-width: 300px;
+        height: 100vh;
+        height: 100dvh;
+    }
+
+    /* Logo */
+    .logo {
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .logo a {
+        font-size: 21px;
+    }
+
+    /* Close Button */
+    .btn_two {
+        top: 20px;
+        right: 18px;
+    }
+
+    /* Menu Items */
+    .menu {
+        padding: 20px 12px;
+    }
+
+    .menu li {
+        padding: 14px 12px;
+        margin-bottom: 6px;
+    }
+
+    .menu li a {
+        font-size: 15px;
+    }
+
+    /* Social Media */
+    .social_media {
+        padding: 18px 10px;
+    }
+
+    .social_media ul {
+        gap: 22px;
+    }
+
+    .social_media a {
+        font-size: 21px;
+    }
+}
+
+/* Small Phones */
+@media screen and (max-width: 380px) {
+
+    .sidebar_menu {
+        width: 88%;
+    }
+
+    .logo a {
+        font-size: 19px;
+    }
+
+    .menu li {
+        padding: 12px 10px;
+    }
+
+    .menu li a {
+        font-size: 14px;
+    }
+}
