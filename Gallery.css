@@ -38,6 +38,7 @@ body {
 /* Fix Gallery Background on Mobile */
 @media screen and (max-width: 768px) {
     .main_box {
+        width:100%;
         background-size: 100% auto !important;
         background-position: center top !important;
         background-repeat: no-repeat !important;
