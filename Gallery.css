@@ -19,6 +19,7 @@ body {
 }
 
 /* Background Image */
+/* Background Image */
 .main_box {
     min-height: 100vh;
     width: 100%;
@@ -33,9 +34,18 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
+/* Mobile Background Fix */
+@media screen and (max-width: 768px) {
+    .main_box {
+        min-height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
 /* Hide Checkbox */
 #check {
     display: none;
